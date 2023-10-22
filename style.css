@@ -1,0 +1,48 @@
+/* #EBEBEB
+#DE6E4B
+#201E1F */
+
+h1 {
+    color:#3A6EA5;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #201E1F;
+}
+
+.js-font-color-1 {
+    color: #3A6EA5;
+}
+
+.js-font-color-2 {
+    color: #DE6E4B;
+}
+
+
+
+.project-box {
+    background-color: #DE6E4B;
+    border: 1px solid #DE6E4B;
+    border-radius: 20px;
+    height: 100%;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: left;
+    color:#3A6EA5;
+}
+
+.row {
+    margin: 10px 0;
+}
+
+.breadth-desc {
+    color: #3A6EA5;
+    font-size: 20px;
+}
+
+.my-breadth {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
