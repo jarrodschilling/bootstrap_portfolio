@@ -54,7 +54,7 @@ h2 {
 
 .breadth-desc {
     color: #3A6EA5;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .about-desc {
@@ -63,10 +63,14 @@ h2 {
     margin: 20px 50px;
 }
 
-.my-breadth {
+.my-breadth, .back-plot {
     width: 100%;
     border: 2px solid black;
     border-radius: 20px;
+}
+
+.my-breadth {
+    /* height: 250px; */
 }
 
 a {
@@ -83,5 +87,9 @@ button {
 
 .in-progress {
     font-size: 24px;
-    margin-top: 25px;
+    margin-top: 15px;
+}
+
+.tight {
+    margin: 5px 0;
 }
