@@ -1,9 +1,0 @@
-TLDR; "What interests me in life is curiosity, challenges, the good fight with its victories and defeats." - Paulo Coelho
-
-What began as a quest to systematically solve issues within my own trading process, led me to fall in love with the idea being able to solve other humans' problems with code. My name is Jarrod and I am currently residing just outside of SLC, UT. Over the past year I've developed a fondess and curiosity around what I can create with code. Currently my passion is using Python to solve real world problems with trading and investing systems. The two primary applications I am working on are my.Breadth and Back Plot, both of which serve as a way to speed the process of identifying stock market enviroments that present the best risk/reward probabilities.
-
-Prior to my trading and coding endeavors, I spent 4 years building and running a successful e-commerce company called SCH Capital Designs LLC. I created from scratch systems for inventory management, bookeeping and shipping using Excel. Wow, do I wish I could have just programmed my own solutions back then!
-
-Before diving into the world of e-commerce I spent 8 years in the Private Banking + Investment Management world with Barclays and JPMorgan in Palm Beach, FL. Also during that time I went back to school to earn my Master of Science in Entrepreneurship (2014) and build a wearable technology start-up called WOOband. I also had an incredible opportunity to spend two months in 2014 on a consulting engagement with entrepreneurs in the townships surrounding Cape Town, South Africa.
-
-I graduated from the University of Florida with a Master of Science in Finance (2008) and a Bachelor of Science in Business Administration (2007). I live life by the four C's: coffee, coding, climbing, and college_football. GO GATORS!
