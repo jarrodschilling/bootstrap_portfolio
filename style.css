@@ -17,6 +17,14 @@ h1 {
     color:#3A6EA5;
 }
 
+.js-title {
+    font-size: 26px;
+    text-align: center;
+    color:#3A6EA5;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
 .js-font-color-1 {
     color: #3A6EA5;
 }
