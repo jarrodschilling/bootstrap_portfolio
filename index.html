@@ -1,135 +1,305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Jarrod Schilling</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarrod Schilling - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <!-- <a class="navbar-brand js-font-color-1" href="./index.html"></a> -->
-            <h1 class="js-title">Jarrod Schilling</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link js-font-color-2 activated" aria-current="page" href="./index.html">Projects</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link js-font-color-2" href="./index.html">Projects</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link js-font-color-2" href="./about.html">About Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- <h1>Jarrod Schilling Portfolio</h1> -->
+<body class="bg-gray-900 text-gray-100">
 
-    <div class="container text-center my-breadth-container"></div>
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                <h2>TradeStatsPro</h2>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-6 col-sm-0">
-                <div class="project-box"></div>
-            </div>
-            
-            
-        </div>
-        <div class="row" style="padding-bottom: 20px; margin-bottom: 20px;">
-            <div class="col my-auto">
-                <p class="breadth-desc">Build with Next.js(TypeScript), Prisma ORM, and MySQL; Trade Stats Pro empowers traders to track their trading account statistics in an accurate and timely fashion.</p>
-                <p class="breadth-desc">It allows for individual historical trade analysis, putting traders in the driver seat to improve their trading process by targeting inefficiencies in their trading system.</p>
-                <button class="tight"><a class="about-desc" href="https://tradestatspro.com" target="_blank"><strong>tradestatspro.com</strong></a></button>
-                <button class="tight"><a class="about-desc" href="https://github.com/jarrodschilling/deploy_smart_trader" target="_blank"><strong>Github Repo</strong></a></button>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                <img class="back-plot" width="10" src="./assets/trade_stats_statistics_2.png" alt="backPlot">
-            </div>
-        </div>
-    </div>
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <div class="container text-center my-breadth-container">
-        <div class="row">
-            <div class="col-xl-8 col-lg-7 col-md-5 col-sm-0">
-                <div class="project-box"></div>
-            </div>
-            <div class="col-xl-4 col-lg-5 col-md-7 col-sm-12 col-12">
-                <h2>Smart Trader</h2>
-            </div>
-        </div>
-        <div class="row" style="border-bottom: 3px solid black; padding-bottom: 20px; margin-bottom: 20px;">
-            <div class="col my-auto">
-                <p class="breadth-desc">MERN application that enables users to track their trading account statistics accurately. Allows for individual historical trade analysis, putting users in the driver seat to improve their trading process by targeting inefficiencies in their system.</p>
-                <p class="breadth-desc">Provides real time current portfolio performance by utilizing an external API for market data.</p>
-                <button class="tight"><a class="about-desc" href="https://www.youtube.com/watch?v=_WVQE-Cvf6Y" target="_blank"><strong>Video Demo</strong></a></button>
-                <button class="tight"><a class="about-desc" href="https://github.com/jarrodschilling/smart_trader_MERN" target="_blank"><strong>Github Repo</strong></a></button>
-                <p class="in-progress">IN PROGRESS</p>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                <img class="my-breadth" src="./assets/trade_smart.png" alt="smart_trader">
-            </div>
-        </div>
+  <nav class="bg-blue-800 p-4 sticky top-0">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-emerald-500 text-xl font-bold">Jarrod Schilling</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="text-gray-100 hover:text-gray-300">About Me</a>
+        <a href="#technologies" class="text-gray-100 hover:text-gray-300">Technologies</a>
+        <a href="#projects" class="text-gray-100 hover:text-gray-300">Projects</a>
+        <a href="#contact" class="text-gray-100 hover:text-gray-300">Contact</a>
+      </div>
+
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-100 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
     </div>
 
+    <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 mt-4">
+      <a href="#about" class="text-gray-100 hover:text-gray-300">About Me</a>
+      <a href="#technologies" class="text-gray-100 hover:text-gray-300">Technologies</a>
+      <a href="#projects" class="text-gray-100 hover:text-gray-300">Projects</a>
+      <a href="#contact" class="text-gray-100 hover:text-gray-300">Contact</a>
+    </div>
+  </nav>
 
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <div class="container text-center my-breadth-container">
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                <h2>my.Breadth</h2>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-6 col-sm-0">
-                <div class="project-box"></div>
-            </div>
+
+  <section id="intro" class="container mx-auto p-8">
+    <p class="text-xl text-center mb-2">
+      TLDR; "What interests me in life is curiosity, challenges, the good fight with its victories and defeats."
+    </p>
+    <P class="font-semibold text-center"> - Paulo Coelho</P>
+  </section>
+
+
+  <section id="projects" class="container mx-auto px-8 pb-0 pt-8 md:pt-20">
+    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
+
+    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-lg mt-8 mb-12">
+
+      <div class="bg-emerald-700 border-b border-gray-800 p-4 flex justify-between items-center">
+        <h2 class="text-gray-100 text-lg font-semibold text-center md:text-left">Trade Stats Pro</h2>
+        <div class="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-center">
+          <a href="https://tradestatspro.com/" target="_blank" class="text-white font-semibold hover:text-blue-500">View App</a>
+          <span class="hidden md:text-white md:flex">|</span>
+          <a href="https://github.com/jarrodschilling/deploy_smart_trader" target="_blank" class="text-white font-semibold hover:text-blue-500">Github Repo</a>
         </div>
-        <div class="row" style="border-bottom: 3px solid black; padding-bottom: 20px; margin-bottom: 20px;">
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                <img class="my-breadth" src="./assets/my_breadth_app.png" alt="my_breadth">
-            </div>
-            <div class="col my-auto">
-                <p class="breadth-desc">Python/Flask application that helps users understand the current equity market environment using customizable breadth metrics.</p>
-                <p class="breadth-desc">Add up to three custom portfolios to track how well they are trending in the current market environment.</p>
-                <button class="tight"><a class="about-desc" href="https://www.youtube.com/watch?v=anoPYOAqJys" target="_blank"><strong>Video Demo</strong></a></button>
-                <button class="tight"><a class="about-desc" href="https://www.youtube.com/playlist?list=PLnWC1DBR2rgRqbkQsqRhdZdEwxzbVAEo0" target="_blank"><strong>Code Review</strong></a></button>
-                <button class="tight"><a class="about-desc" href="https://github.com/jarrodschilling/my_breadth_oop" target="_blank"><strong>Github Repo</strong></a></button>
-                <p class="in-progress">IN PROGRESS</p>
-            </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:space-x-10 p-4">
+
+        <div class="md:w-1/3 w-full md:mt-8">
+          <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
+            <img class="w-16 h-20 mr-4" src="./assets/nextjs-icon-svgrepo-com.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/typescript.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/mysql.svg" alt="">
+          </div>
+          <p class="text-gray-100 text-center mb-4">Deployed with Docker to an AWS EC2 instance; <a href="https://tradestatspro.com" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Trade Stats Pro</strong></a> empowers traders to track their trading account statistics in an accurate and timely fashion.</p>
+          <p class="text-gray-100 text-center mb-4">It allows for individual historical trade analysis, putting traders in the driver’s seat to improve their trading process by targeting inefficiencies in their trading system.</p>
+          <p class="text-gray-100 text-center">Login via Google(OAuth 2.0), upload a spreadsheet file of transactions and let Trade Stats Pro do the rest!</p>
         </div>
+        
+        <img 
+          src="./assets/trade_stats_pro.png"
+          alt="Trade Stats Pro screenshot"
+          class="md:w-2/3 w-full border border-gray-700 mb-4 md:mb-0 mt-4 md:mt-0"
+        >
+      </div>
     </div>
 
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <div class="container text-center my-breadth-container">
-        <div class="row">
-            <div class="col-xl-9 col-lg-8 col-md-7 col-sm-0">
-                <div class="project-box"></div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 col-12">
-                <h2>Back Plot</h2>
-            </div>
-            
+
+    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-lg my-12">
+
+      <div class="bg-emerald-700 border-b border-gray-800 p-4 flex justify-between items-center">
+        <h2 class="text-gray-100 text-lg font-semibold text-center md:text-left">Smart Trader</h2>
+        <div class="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-center">
+          <a href="https://www.youtube.com/watch?v=_WVQE-Cvf6Y" target="_blank" class="text-white font-semibold hover:text-blue-500">Video Demo</a>
+          <span class="hidden md:text-white md:flex">|</span>
+          <a href="https://github.com/jarrodschilling/smart_trader_MERN" target="_blank" class="text-white font-semibold hover:text-blue-500">Github Repo</a>
         </div>
-        <div class="row" style="padding-bottom: 20px; margin-bottom: 20px;">
-            <div class="col my-auto">
-                <p class="breadth-desc">Python backend application that allows you to backtest custom portfolios against breadth metrics across time.</p>
-                <p class="breadth-desc">Highlight charts based on user specific parameters to identify optimal trading environments in the market.</p>
-                <button class="tight"><a class="about-desc" href="https://www.youtube.com/watch?v=vfW36kdvb2M" target="_blank"><strong>Video Demo</strong></a></button>
-                <button class="tight"><a class="about-desc" href="https://github.com/jarrodschilling/stock_backtesting" target="_blank"><strong>Github Repo</strong></a></button>
-                <p class="in-progress">IN PROGRESS</p>
-            </div>
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                <img class="back-plot" src="./assets/graph_app.png" alt="backPlot">
-            </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:space-x-10 p-4">
+
+        <div class="md:w-1/3 w-full md:mt-8">
+          <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
+            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/javascript.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/mongodb.svg" alt="">
+          </div>
+          <p class="text-gray-100 text-center mb-4">Smart Trader, a necessary precursor to Trade Stats Pro; helps users accurately track their trading account statistics and analyze individual trade history. It empowers traders to identify inefficiencies and improve their strategies.</p>
+          <p class="text-gray-100 text-center">Real-time portfolio performance is provided through an external market data API. Built with Vite, React, Express and MongoDB, the app offers a fast, dynamic user experience.</p>
         </div>
+        
+        <img 
+          src="./assets/trade_smart.png"
+          alt="Smart Trader screenshot"
+          class="md:w-2/3 w-full border border-gray-700 mb-4 md:mb-0 mt-4 md:mt-"
+        >
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-lg my-12">
+
+      <div class="bg-emerald-700 border-b border-gray-800 p-4 flex justify-between items-center">
+        <h2 class="text-gray-100 text-lg font-semibold text-center md:text-left">my.Breadth</h2>
+        <div class="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-center">
+          <a href="https://www.youtube.com/watch?v=anoPYOAqJys" target="_blank" class="text-white font-semibold hover:text-blue-500">Video Demo</a>
+          <span class="hidden md:text-white md:flex">|</span>
+          <a href="https://github.com/jarrodschilling/my_breadth_oop" target="_blank" class="text-white font-semibold hover:text-blue-500">Github Repo</a>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:space-x-10 p-4">
+
+        <div class="md:w-1/3 w-full md:mt-8">
+          <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
+            <img class="w-16 h-20 mr-4" src="./assets/python.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/flask.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/mysql.svg" alt="">
+          </div>
+          <p class="text-gray-100 text-center mb-4">Python/Flask application that utilizes object-oriented programming (OOP) to help users understand the current equity market environment using customizable breadth metrics.</p>
+          <p class="text-gray-100 text-center">Add up to three custom portfolios to track how well they are trending in the current market environment.</p>
+        </div>
+        
+        <img 
+          src="./assets/my_breadth_app.png"
+          alt="my.Breadth screenshot"
+          class="md:w-2/3 w-full border border-gray-700 mb-4 md:mb-0 mt-4 md:mt-0"
+        >
+      </div>
+    </div>
+
+
+    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-lg mt-12 mb-8">
+
+      <div class="bg-emerald-700 border-b border-gray-800 p-4 flex justify-between items-center">
+        <h2 class="text-gray-100 text-lg font-semibold text-center md:text-left">Back Plot</h2>
+        <div class="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-center">
+          <a href="https://www.youtube.com/watch?v=vfW36kdvb2M" target="_blank" class="text-white font-semibold hover:text-blue-500">Video Demo</a>
+          <span class="hidden md:text-white md:flex">|</span>
+          <a href="https://github.com/jarrodschilling/stock_backtesting" target="_blank" class="text-white font-semibold hover:text-blue-500">Github Repo</a>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:space-x-10 p-4">
+
+        <div class="md:w-1/3 w-full md:mt-8">
+          <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
+            <img class="w-16 h-20 mr-4" src="./assets/python.svg" alt="">
+            <img class="w-16 h-16 mt-2 mr-4" src="./assets/Matplotlib_icon.svg" alt="">
+            <img class="w-16 h-16 mt-2 mr-4" src="./assets/pandas.svg" alt="">
+          </div>
+          <p class="text-gray-100 text-center mb-4">Python backend application harnessing the power of Matplotlib + Pandas DF to allow users to backtest custom portfolios against breadth metrics across time.</p>
+          <p class="text-gray-100 text-center">Highlight charts based on user specific parameters to identify optimal trading environments in the market.</p>
+        </div>
+        
+        <img 
+          src="./assets/graph_app.png"
+          alt="Back Plot screenshot"
+          class="md:w-2/3 w-full border border-gray-700 mb-4 md:mb-0 mt-4 md:mt-0"
+        >
+      </div>
+    </div>
+  </section>
+
+
+  <section id="technologies" class="container mx-auto px-8 pb-0 pt-20">
+    <h1 class="text-3xl font-semibold text-center mb-6">Technologies</h1>
+
+    <div class="md:flex md:justify-between mb-8 md:mx-20">
+      <div class="md:w-1/2 md:mr-2">
+        <h2 class="text-xl font-semibold mb-4">Languages</h2>
+        <div class="flex flex-wrap justify-around bg-gray-300 px-4 py-2 rounded-lg">
+          <div class="text-center">
+            <img class="w-16 h-16 mx-auto mb-1" src="./assets/typescript.svg" alt="TypeScript">
+            <span class="text-gray-800">TypeScript</span>
+          </div>
+          <div class="text-center">
+            <img class="w-16 h-16 mx-auto mb-1" src="./assets/javascript.svg" alt="JavaScript">
+            <span class="text-gray-800">JavaScript</span>
+          </div>
+          <div class="text-center">
+            <img class="w-16 h-16 mx-auto mb-1" src="./assets/python.svg" alt="Python">
+            <span class="text-gray-800">Python</span>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 md:ml-2 mt-8 md:mt-0">
+        <h2 class="text-xl font-semibold mb-4">Databases</h2>
+        <div class="flex flex-wrap justify-around bg-gray-300 px-4 py-2 rounded-lg">
+          <div class="text-center">
+            <img class="w-16 h-16 mx-auto mb-1" src="./assets/mysql.svg" alt="MySQL">
+            <span class="text-gray-800">MySQL</span>
+          </div>
+          <div class="text-center">
+            <img class="w-16 h-16 mx-auto mb-1" src="./assets/mongodb.svg" alt="MongoDB">
+            <span class="text-gray-800">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mb-8 md:mx-20">
+      <h2 class="text-xl font-semibold mb-4">Frameworks</h2>
+      <div class="flex flex-wrap justify-around bg-gray-300 px-4 py-2 rounded-lg">
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/nextjs-icon-svgrepo-com.svg" alt="Next.js">
+          <span class="text-gray-800">Next.js</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/react.svg" alt="React">
+          <span class="text-gray-800">React</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/nestjs.svg" alt="NestJS">
+          <span class="text-gray-800">NestJS</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/flask.svg" alt="Flask">
+          <span class="text-gray-800">Flask</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mb-8 md:mx-20">
+      <h2 class="text-xl font-semibold mb-4">Other Tools</h2>
+      <div class="flex flex-wrap justify-around bg-gray-300 px-4 py-2 rounded-lg">
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/docker.svg" alt="Docker">
+          <span class="text-gray-800">Docker</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/github.svg" alt="GitHub">
+          <span class="text-gray-800">GitHub</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/amazon.svg" alt="AWS">
+          <span class="text-gray-800">AWS</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/tailwindcss.svg" alt="Tailwind CSS">
+          <span class="text-gray-800">Tailwind CSS</span>
+        </div>
+        <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/boostrap.svg" alt="Bootstrap">
+          <span class="text-gray-800">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section id="about" class="container mx-auto p-8 pt-20">
+    <h1 class="text-3xl font-semibold text-center mb-6">About Me</h1>
+    <p class="text-center w-full mx-auto mb-4">What began as a quest to systematically solve issues within my own equity trading process, led me to fall in love with the idea being able to solve other humans' problems with code. My name is Jarrod and I am currently residing just outside of Salt Lake City, UT. Over the past two years I've developed a fondness and curiosity around what I can create with code.</p>
+    <p class="text-center w-full mx-auto mb-4">I am a full-stack software developer with a focus on JavaScript/TypeScript and Python technologies. I specialize in building scalable web applications, primarily using frameworks like Next.js, React, and NestJS on the frontend and backend. My experience spans across designing robust authentication systems, handling SQL and NoSQL databases, and deploying cloud-based solutions on AWS.</p>
+    <p class="text-center w-full mx-auto mb-4">With a diverse professional background that includes equity trading and portfolio management, I bring a unique analytical perspective to software development, particularly in fintech and data-driven applications. I have successfully delivered projects like <a href="https://tradestatspro.com" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Trade Stats Pro</strong></a>, a trading statistics tracker, and my.Breadth, a stock market breadth analysis tool.</p>
+    <p class="text-center w-full mx-auto">I&#39m always looking for opportunities to create high-impact software solutions, leveraging my problem-solving skills and passion for clean, maintainable code. I graduated from the University of Florida with a Master of Science in Finance (2008) and a Bachelor of Science in Business Administration (2007). I live life by the four C's: coffee, coding, climbing, and college_football. GO GATORS!</p>
+    <div class="flex flex-col items-center md:flex md:flex-row md:justify-between md:w-1/2 md:mx-auto text-blue-400 mt-14">
+      <a href="https://www.linkedin.com/in/jarrodschilling/" target="_blank" class="mb-2 md:mb-0 font-semibold hover:text-blue-500">LinkedIn</a>
+      <span class="hidden md:text-white md:flex">|</span>
+      <a href="https://github.com/jarrodschilling" target="_blank" class="mb-2 md:mb-0 font-semibold hover:text-blue-500">GitHub</a>
+      <span class="hidden md:text-white md:flex">|</span>
+      <a href="https://www.youtube.com/@JarrodSchilling/" target="_blank" class="font-semibold hover:text-blue-500">YouTube</a>
+    </div>
+  </section>
+
+
+  
+  <section id="contact" class="container mx-auto p-8 pt-14">
+    <h2 class="text-3xl font-semibold text-center mb-6">Contact Me</h2>
+    <p class="text-center max-w-2xl mx-auto">
+      Feel free to reach out to me on <a href="https://www.linkedin.com/in/jarrodschilling/" class="text-blue-400 hover:text-blue-500">LinkedIn Messages</a>.
+    </p>
+  </section>
+
+  
+
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
