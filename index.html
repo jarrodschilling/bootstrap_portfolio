@@ -11,7 +11,9 @@
 
   <nav class="bg-blue-800 p-4 sticky top-0">
     <div class="container mx-auto flex justify-between items-center">
-      <div class="text-emerald-500 text-xl font-bold">Jarrod Schilling</div>
+      <a href="#">
+        <div class="text-emerald-500 text-xl font-bold">Jarrod Schilling</div>
+      </a>
       <div class="hidden md:flex space-x-6">
         <a href="#about" class="text-gray-100 hover:text-gray-300">About Me</a>
         <a href="#technologies" class="text-gray-100 hover:text-gray-300">Technologies</a>
@@ -51,9 +53,41 @@
     <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-lg mt-8 mb-12">
 
       <div class="bg-emerald-700 border-b border-gray-800 p-4 flex justify-between items-center">
+        <h2 class="text-gray-100 text-lg font-semibold text-center md:text-left">Move Your Feet</h2>
+        <div class="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-center">
+          <a href="https://apps.apple.com/us/app/move-your-feet/id6738895170" target="_blank" class="text-white font-semibold hover:text-blue-500">Download App</a>
+          <span class="hidden md:text-white md:flex">|</span>
+          <a href="https://moveyourfeetapp.com/" target="_blank" class="text-white font-semibold hover:text-blue-500">Website</a>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row md:space-x-10 p-4">
+
+        <div class="md:w-1/3 w-full md:mt-8">
+          <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
+            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="react">
+            <img class="w-16 h-20 mr-4" src="./assets/typescript.svg" alt="typescript">
+            <img class="w-16 h-20 mr-4" src="./assets/expo_logo.svg" alt="expo">
+          </div>
+          <p class="text-gray-100 text-center mb-4">Developed for Apple iOS with React Native, TypeScript, and Expo, <a href="https://apps.apple.com/us/app/move-your-feet/id6738895170" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Move Your Feet (MYF)</strong></a> is a comprehensive daily guide to recovery, helping users stay accountable and focused on their 12 step journey.</p>
+          <p class="text-gray-100 text-center mb-4">The app features push notifications to keep users engaged with their daily commitments and recovery goals. Users can start their day with structured meditation, and readings, and end each evening with reflection and journaling.</p>
+          <p class="text-gray-100 text-center">MYF simplifies the daily actions essential for working the 12 steps, helping users achieve goals while transforming sponsor guidance into actionable steps.</p>
+        </div>
+        
+        <img 
+          src="./assets/myf_screenshot.png"
+          alt="Trade Stats Pro screenshot"
+          class="md:w-2/3 w-full border border-gray-700 mb-4 md:mb-0 mt-4 md:mt-0"
+        >
+      </div>
+    </div>
+
+    <div class="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden shadow-lg mt-8 mb-12">
+
+      <div class="bg-emerald-700 border-b border-gray-800 p-4 flex justify-between items-center">
         <h2 class="text-gray-100 text-lg font-semibold text-center md:text-left">Trade Stats Pro</h2>
         <div class="mt-4 md:mt-0 flex flex-col md:flex-row md:justify-end space-y-2 md:space-y-0 md:space-x-4 text-center">
-          <a href="https://tradestatspro.com/" target="_blank" class="text-white font-semibold hover:text-blue-500">View App</a>
+          <a href="https://www.youtube.com/live/3LGQEPpsngs" target="_blank" class="text-white font-semibold hover:text-blue-500">Video Demo</a>
           <span class="hidden md:text-white md:flex">|</span>
           <a href="https://github.com/jarrodschilling/deploy_smart_trader" target="_blank" class="text-white font-semibold hover:text-blue-500">Github Repo</a>
         </div>
@@ -63,12 +97,12 @@
 
         <div class="md:w-1/3 w-full md:mt-8">
           <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
-            <img class="w-16 h-20 mr-4" src="./assets/nextjs-icon-svgrepo-com.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/typescript.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/mysql.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/nextjs-icon-svgrepo-com.svg" alt="nextjs">
+            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="react">
+            <img class="w-16 h-20 mr-4" src="./assets/typescript.svg" alt="typescript">
+            <img class="w-16 h-20 mr-4" src="./assets/mysql.svg" alt="mysql">
           </div>
-          <p class="text-gray-100 text-center mb-4">Deployed with Docker to an AWS EC2 instance; <a href="https://tradestatspro.com" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Trade Stats Pro</strong></a> empowers traders to track their trading account statistics in an accurate and timely fashion.</p>
+          <p class="text-gray-100 text-center mb-4">Deployed with Docker to an AWS EC2 instance; <a href="https://www.youtube.com/live/3LGQEPpsngs" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Trade Stats Pro</strong></a> empowers traders to track their trading account statistics in an accurate and timely fashion.</p>
           <p class="text-gray-100 text-center mb-4">It allows for individual historical trade analysis, putting traders in the driver’s seat to improve their trading process by targeting inefficiencies in their trading system.</p>
           <p class="text-gray-100 text-center">Login via Google(OAuth 2.0), upload a spreadsheet file of transactions and let Trade Stats Pro do the rest!</p>
         </div>
@@ -97,9 +131,9 @@
 
         <div class="md:w-1/3 w-full md:mt-8">
           <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
-            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/javascript.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/mongodb.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/react.svg" alt="react">
+            <img class="w-16 h-20 mr-4" src="./assets/javascript.svg" alt="javascript">
+            <img class="w-16 h-20 mr-4" src="./assets/mongodb.svg" alt="mongodb">
           </div>
           <p class="text-gray-100 text-center mb-4">Smart Trader, a necessary precursor to Trade Stats Pro; helps users accurately track their trading account statistics and analyze individual trade history. It empowers traders to identify inefficiencies and improve their strategies.</p>
           <p class="text-gray-100 text-center">Real-time portfolio performance is provided through an external market data API. Built with Vite, React, Express and MongoDB, the app offers a fast, dynamic user experience.</p>
@@ -129,9 +163,9 @@
 
         <div class="md:w-1/3 w-full md:mt-8">
           <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
-            <img class="w-16 h-20 mr-4" src="./assets/python.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/flask.svg" alt="">
-            <img class="w-16 h-20 mr-4" src="./assets/mysql.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/python.svg" alt="python">
+            <img class="w-16 h-20 mr-4" src="./assets/flask.svg" alt="flask">
+            <img class="w-16 h-20 mr-4" src="./assets/mysql.svg" alt="mysql">
           </div>
           <p class="text-gray-100 text-center mb-4">Python/Flask application that utilizes object-oriented programming (OOP) to help users understand the current equity market environment using customizable breadth metrics.</p>
           <p class="text-gray-100 text-center">Add up to three custom portfolios to track how well they are trending in the current market environment.</p>
@@ -161,9 +195,9 @@
 
         <div class="md:w-1/3 w-full md:mt-8">
           <div class="flex bg-gray-300 px-2 flex-wrap md:justify-between justify-center mb-8">
-            <img class="w-16 h-20 mr-4" src="./assets/python.svg" alt="">
-            <img class="w-16 h-16 mt-2 mr-4" src="./assets/Matplotlib_icon.svg" alt="">
-            <img class="w-16 h-16 mt-2 mr-4" src="./assets/pandas.svg" alt="">
+            <img class="w-16 h-20 mr-4" src="./assets/python.svg" alt="python">
+            <img class="w-16 h-16 mt-2 mr-4" src="./assets/Matplotlib_icon.svg" alt="matplotlib">
+            <img class="w-16 h-16 mt-2 mr-4" src="./assets/pandas.svg" alt="pandas">
           </div>
           <p class="text-gray-100 text-center mb-4">Python backend application harnessing the power of Matplotlib + Pandas DF to allow users to backtest custom portfolios against breadth metrics across time.</p>
           <p class="text-gray-100 text-center">Highlight charts based on user specific parameters to identify optimal trading environments in the market.</p>
@@ -228,6 +262,10 @@
           <span class="text-gray-800">React</span>
         </div>
         <div class="text-center">
+          <img class="w-16 h-16 mx-auto mb-1" src="./assets/expo_logo.svg" alt="Expo">
+          <span class="text-gray-800">Expo</span>
+        </div>
+        <div class="text-center mr-6">
           <img class="w-16 h-16 mx-auto mb-1" src="./assets/nestjs.svg" alt="NestJS">
           <span class="text-gray-800">NestJS</span>
         </div>
@@ -271,8 +309,8 @@
   <section id="about" class="container mx-auto p-8 pt-20">
     <h1 class="text-3xl font-semibold text-center mb-6">About Me</h1>
     <p class="text-center w-full mx-auto mb-4">What began as a quest to systematically solve issues within my own equity trading process, led me to fall in love with the idea being able to solve other humans' problems with code. My name is Jarrod and I am currently residing just outside of Salt Lake City, UT. Over the past two years I've developed a fondness and curiosity around what I can create with code.</p>
-    <p class="text-center w-full mx-auto mb-4">I am a full-stack software developer with a focus on JavaScript/TypeScript and Python technologies. I specialize in building scalable web applications, primarily using frameworks like Next.js, React, and NestJS on the frontend and backend. My experience spans across designing robust authentication systems, handling SQL and NoSQL databases, and deploying cloud-based solutions on AWS.</p>
-    <p class="text-center w-full mx-auto mb-4">With a diverse professional background that includes equity trading and portfolio management, I bring a unique analytical perspective to software development, particularly in fintech and data-driven applications. I have successfully delivered projects like <a href="https://tradestatspro.com" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Trade Stats Pro</strong></a>, a trading statistics tracker, and my.Breadth, a stock market breadth analysis tool.</p>
+    <p class="text-center w-full mx-auto mb-4">I am an Apple iOS and full-stack software developer with a focus on JavaScript/TypeScript and Python technologies. I specialize in building scalable web applications, primarily using frameworks like Next.js, React, and NestJS on the frontend and backend. My experience spans across designing robust authentication systems, handling SQL and NoSQL databases, and deploying cloud-based solutions on AWS.</p>
+    <p class="text-center w-full mx-auto mb-4">With a diverse professional background that includes equity trading and portfolio management, I bring a unique analytical perspective to software development, particularly in fintech and data-driven applications. I have successfully delivered projects like <a href="https://www.youtube.com/live/3LGQEPpsngs" target="_blank" class="text-blue-400 hover:text-blue-500"><strong>Trade Stats Pro</strong></a>, a trading statistics tracker, and my.Breadth, a stock market breadth analysis tool.</p>
     <p class="text-center w-full mx-auto">I&#39m always looking for opportunities to create high-impact software solutions, leveraging my problem-solving skills and passion for clean, maintainable code. I graduated from the University of Florida with a Master of Science in Finance (2008) and a Bachelor of Science in Business Administration (2007). I live life by the four C's: coffee, coding, climbing, and college_football. GO GATORS!</p>
     <div class="flex flex-col items-center md:flex md:flex-row md:justify-between md:w-1/2 md:mx-auto text-blue-400 mt-14">
       <a href="https://www.linkedin.com/in/jarrodschilling/" target="_blank" class="mb-2 md:mb-0 font-semibold hover:text-blue-500">LinkedIn</a>
